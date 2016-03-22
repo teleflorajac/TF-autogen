@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>	
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">	
+
+<!--// LEGEND //
+///////////////////////////////////
+//	<position />
+//	Must be unique. Look at mockup for position numbers but in general...
+//	1 - Very top
+//	2 - Second section from the top
+//	3 - Third section from the top (above Hero/products)
+//	4 - Fourth section from the top (below Hero/products)
+//	5 - Footer (above social icons)
+// 
+//	* means enter any thing
+//
+//	|| means "or"
+//
+//	NULL means no value is given
+//
+////////////////////////////////////
+//	NOTE: If you want to include an "&" in your copy, use "&amp;"
+////////////////////////////////////
+-->
+<metadata>
+	<srccode>EM_PR_CH_151224</srccode> <!-- *Required -->
+	<promocode>EMP1224A</promocode> <!-- *Required -->
+	<expires>12/24/2015</expires> <!-- *Required -->
+</metadata>
+
+<presentation>
+	<dir>TFcom</dir> <!-- Folder name. DO NOT CHANGE -->	
+	<template>S</template> <!-- From list of design templates -->	
+
+	<defaultLinkColor>#880000</defaultLinkColor> <!-- hex# -->
+
+	<hiliteTextColor1>#008800</hiliteTextColor1> <!-- hex# || NULL -->
+	<hiliteTextColor2>7f7f7f</hiliteTextColor2> <!-- hex# || NULL -->
+
+	<!-- SKIP IF NO BANNER WILL BE USED -->
+	<banner>
+		<position>1</position> <!-- unique interger >= 1 || NULL -->
+		<type></type> <!-- "* now" || image file name || NULL -->
+		<bgColor>#000</bgColor> <!-- hex# || NULL -->
+		<fontColor>#fff</fontColor> <!-- hex# || NULL -->
+	</banner>
+
+	<logo>
+		<position>2</position> <!-- unique interger >= 1 -->
+		<size>sm</size> <!-- "sm" || "md" || "lg" -->
+		<color></color> <!-- hex# || NULL -->
+	</logo>
+	
+	<nav>
+		<position>3</position> <!-- unique interger >= 1 -->
+		<bgColor>#fff</bgColor> <!-- hex# -->
+		<linkColor>#999</linkColor> <!-- hex# -->
+	</nav>
+	
+	<!-- SKIP IF NO CTA BUTTON WILL BE USED -->
+	<ctaButton>
+		<bgColor>#6DB334</bgColor> <!-- hex# || NULL -->
+		<linkColor>#ffffff</linkColor> <!-- hex# || NULL -->
+	</ctaButton>
+
+	<!-- "split" MEANS a row above and below Hero -->
+	<prodLayout>split</prodLayout> <!-- "split" || NULL -->
+	
+	<!-- SKIP IF IMAGE(S) WILL BE USED -->
+	<bottom>
+		<tileBgColor>#ffe2f3</tileBgColor> <!-- hex# || NULL -->
+		<tileTxtColor></tileTxtColor> <!-- hex# || NULL -->
+	</bottom>
+</presentation>
+
+<content>
+
+	<!-- SKIP IF NO BANNER WILL BE USED -->
+	<banner>
+		<copy>Save 15%</copy> <!-- copy || NULL -->
+		<link>http://www.teleflora.com/?promotion=rmn25</link> <!-- URL || NULL -->
+	</banner>
+	
+	<nav>	
+		<firstText>Birthday</firstText> <!-- text -->
+		<firstLink>http://www.teleflora.com/birthday-flowers/cat210012</firstLink> <!-- URL -->
+
+		<secondText></secondText> <!-- text -->
+		<secondLink></secondLink> <!-- URL -->
+
+		<thirdText></thirdText> <!-- text -->
+		<thirdLink></thirdLink> <!-- URL -->
+
+		<fourthText></fourthText> <!-- text -->
+		<fourthLink></fourthLink> <!-- URL -->
+
+		<fifthText></fifthText> <!-- text -->
+		<fifthLink></fifthLink> <!-- URL -->
+	</nav>	
+
+	<hero>
+		<!-- IF HERO IS A PRODUCT, SKIP <mainImg> -->
+		<mainImg>sample.jpg</mainImg> <!-- image file name -->
+		<heroURL>http://www.teleflora.com/birthday-flowers/cat210012</heroURL> <!-- URL -->
+
+		<sideHero>
+			<sideImg></sideImg> <!-- image file name || NULL -->
+			<sideURL>http://www.teleflora.com/flower-arrangement/telefloras-sunny-day-pitcher-of-sunflowers/p_T153-1A?skuId=T153-1A</sideURL> <!-- iURL || NULL -->
+		</sideHero>
+		
+		<sideHero>
+			<sideImg></sideImg> <!-- image file name || NULL -->
+			<sideURL>http://www.teleflora.com/flower-arrangement/weber-hot-off-the-grill-by-teleflora/p_T14F100A?skuId=T14F100A</sideURL> <!-- iURL || NULL -->
+		</sideHero>
+	</hero>
+	
+	<headline>
+		<color>#000088</color> <!-- hex# || NULL -->
+		<copy>Headline Copy</copy> <!-- copy || NULL -->
+		<link>http://www.teleflora.com/birthday-flowers/cat210012</link> <!-- URL || NULL -->
+	</headline>
+
+	<!-- SKIP IF NO CTA WILL BE USED -->
+	<cta>
+		<color></color> <!-- hex# || NULL -->
+		<copy>CTA Copy</copy> <!-- copy || NULL -->
+	</cta>
+	
+	<!-- SKIP IF NO CTA BUTTON WILL BE USED -->
+	<ctaButton>
+		<color>#008800</color> <!-- hex# || NULL -->
+		<copy>Click Here</copy> <!-- copy || NULL -->
+		<link>http://www.teleflora.com/birthday-flowers/cat210012</link> <!-- URL || NULL -->
+	</ctaButton>
+	
+	<products>
+		<!-- ADD MORE ROWS BY ADDING <row#> TAGS -->
+		<row1> 
+			<headerColor>#880000</headerColor> <!-- hex# || NULL -->
+			<headerText>Birthday</headerText> <!-- copy || NULL -->
+			<headerURL></headerURL> <!-- URL || NULL -->
+
+			<!-- NO MORE THAN 3 PRODUCTS PER ROW -->
+			<product>
+				<title></title> <!-- copy || NULL -->
+				<url>/bouquet/telefloras-merry-bright</prodDir> <!-- directory || NULL -->
+			</product>
+						
+			<product>
+				<title>ANNIVERSARY</title> <!-- copy || NULL -->
+				<url>http://www.teleflora.com/bouquet/telefloras-fun-n-festive-bouquet/p_TBC01-1A?skuId=TBC01-1A</url> <!-- URL || NULL -->
+			</product>
+						
+			<product>
+				<title>GET WELL</title> <!-- copy || NULL -->
+				<url>http://www.teleflora.com/bouquet/telefloras-fun-n-festive-bouquet/p_TBC01-1A?skuId=TBC01-1A</url> <!-- URL || NULL -->
+			</product>
+		</row1>
+
+		<!-- ADD MORE ROWS BY ADDING <row#> TAGS -->
+		<row2>
+			<headerColor></headerColor> <!-- hex# || NULL -->
+			<headerText></headerText> <!-- copy || NULL -->
+			<headerURL></headerURL> <!-- URL || NULL -->
+
+			<!-- NO MORE THAN 3 PRODUCTS PER ROW -->
+			<product>
+				<title></title> <!-- SKU || NULL -->
+				<url></url> <!-- directory || NULL -->
+			</product>
+						
+			<product>
+				<title></title> <!-- SKU || NULL -->
+				<url></url> <!-- directory || NULL -->
+			</product>
+						
+			<product>
+				<title></title> <!-- SKU || NULL -->
+				<url></url> <!-- directory || NULL -->
+			</product>
+		</row2>
+
+		<!-- ADD MORE ROWS BY ADDING <row#> TAGS -->
+		<row3>
+			<headerColor></headerColor> <!-- hex# || NULL -->
+			<headerText></headerText> <!-- copy || NULL -->
+			<headerURL></headerURL> <!-- URL || NULL -->
+
+			<!-- NO MORE THAN 3 PRODUCTS PER ROW -->
+			<product>
+				<title></title> <!-- SKU || NULL -->
+				<url></url> <!-- directory || NULL -->
+			</product>
+						
+			<product>
+				<title></title> <!-- SKU || NULL -->
+				<url></url> <!-- directory || NULL -->
+			</product>
+						
+			<product>
+				<title></title> <!-- SKU || NULL -->
+				<url></url> <!-- directory || NULL -->
+			</product>
+		</row3>
+		
+		<borders>all</borders> <!-- "horizontal" || "vertical" || "all" || NULL -->
+	</products>
+
+	<bottom>
+		<tile1>bottom1.png</tile1> <!-- image file name || copy || NULL -->
+		<title1></title1> <!-- copy || NULL -->
+		<copy1></copy1> <!-- copy || NULL -->
+		<link1>http://www.teleflora.com/sunflowers/cat210167</link1> <!-- URL || NULL -->
+
+		<!-- SKIP IF FULL WIDTH BANNER IS USED -->
+		<tile2>bottom2.png</tile2> <!-- image file name || copy || NULL -->
+		<title2></title1> <!-- copy || NULL -->
+		<copy2></copy2> <!-- copy || NULL -->
+		<link2>http://www.teleflora.com/birthday-flowers/cat210012</link2> <!-- URL || NULL -->
+	</bottom>
+
+	<socialicons>#808080</socialicons> <!-- "rainbow" || hex# || NULL -->
+
+	<legal>
+		<silverpopQS>Email_Address=%%EMAIL%%&amp;srccode=EM_PR_CH_151224&amp;promotion=EMP1224A&amp;utm_source=promotional&amp;utm_medium=Email&amp;utm_campaign=promotional-Email&amp;cvosrc=email.Promotional.151224</silverpopQS>
+	</legal>
+</content>
+
+<!-- Used by main.js. Product name/price tags are dyanamically inserted here. DO NOT EDIT -->
+<dynamic></dynamic>
+
+</root>	
